@@ -37,8 +37,7 @@ function isWin(){
             console.log("YOU WIN");
             boxes[pattern[0]].classList.add("win");
             boxes[pattern[1]].classList.add("win");
-            boxes[pattern[2]].classList.add("win");
-            // console.log(para);            
+            boxes[pattern[2]].classList.add("win");          
             para.innerHTML = "Congractulation's You Won!"
             dialog.classList.add("visible");
             return ;
@@ -57,7 +56,6 @@ function isDraw(){
     }
 }
 for(let i = 0;i<boxes.length ;i++){
-    // boxes[i].addEventListner("click",()=>{handleClick(i)});
     boxes[i].addEventListener("click",()=>{handleClick(i)});
 }
 
